@@ -1,0 +1,59 @@
+
+
+
+body {
+    background-image: url(images/background1.jpeg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top;
+    background-size: 100% auto;
+    font-family:sans-serif;
+    font-size: 20px;
+    color: white;   
+    
+            
+}
+
+section:first{
+
+}
+
+section {
+overflow: auto;
+}
+
+.centre-section{
+    background-color: rgba(0,0,0,0.4);
+    margin-left: auto;
+    margin-right: auto;
+    overflow: auto;
+    text-align: center;
+    border-radius: 5px;
+    width: 50%;
+    
+}
+
+.group {
+    padding-top: 30%;
+}
+
+
+div.btn {
+    display:flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+}
+
+div.btn p {
+    width: 25%;
+    padding: 10px;
+    margin: 7px;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 5px;
+}
+
+div.btn p:hover {
+    background-color: rgba(255,255,255,0.2);
+}
