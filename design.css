@@ -1,6 +1,4 @@
 
-
-
 body {
     background-image: url(images/background1.jpeg);
     background-repeat: no-repeat;
@@ -42,7 +40,7 @@ div.btn {
 }
 
 div.btn p {
-    width: 80%;
+    width: 175px;
     padding: 10px;
     margin: 7px;
     border-style: solid;
@@ -58,29 +56,82 @@ div.btn p:hover {
     background-color: rgba(255,255,255,0.2);
 }
 
-nav {
-    background-color:white;
-    position:fixed;
+
+/* Sidebar setup */
+
+#wrapper
+{
+    padding-left: 250px;   
+    position:relative;
+}
+
+#sidebar-wrapper {
+    z-index: 1;
+    position: fixed;
     top:0;
-    right:0;
-    left:0;
-    height:75px;
-    line-height:75px;
-    text-align:right;
-
-    box-shadow: 0px 5px 10px #888888;
+    left: 250px;
+    width: 250px;
+    height: 100%;
+    margin-left: -250px;
+    overflow-y: auto;
+/*    background: #000;*/
+    background: rgba(0,0,0,0.6);
+}
     
+#page-content-wrapper {
+    width: 100%;
+    position: absolute;
+    padding: 15px;
+    margin-right: -250px;
 }
 
-nav a {
-    margin-right:25px;
+/* Sidebar Styles */
+
+.sidebar-nav {
+    z-index:2;
+    position: absolute;
+    top: 0;
+    left:-8px;
+    width: 250px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar-nav li {
+    text-indent: 20px;
+    line-height: 40px;
+}
+
+.sidebar-nav li a {
+    display: block;
     text-decoration: none;
-    color:black;
-    font-size: 20px;
+    color: #999999;
 }
 
+.sidebar-nav li a:hover {
+    text-decoration: none;
+    color: #fff;
+    background: rgba(255,255,255,0.2);
+}
 
-nav a:hover{
- color:tomato;   
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+    text-decoration: none;
+}
+
+.sidebar-nav > .sidebar-brand {
+    height: 65px;
+    font-size: 18px;
+    line-height: 60px;
+}
+
+.sidebar-nav > .sidebar-brand a {
+    color: #999999;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+    color: #fff;
+    background: none;
 }
 
